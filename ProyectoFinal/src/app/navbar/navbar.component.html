@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-        <img src="../../assets/img/A-64.png" width="30" height="30" alt="">
+        <img src="../../assets/img/logo.png" width="150" height="50" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,20 +13,52 @@
           <a class="nav-link" [routerLink]="['home']">Home</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['heroes']">Contacto</a>
+            <a class="nav-link" [routerLink]="['heroes']">Nosotros</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['peliculas']">Nosotros</a>
+            <a class="nav-link" [routerLink]="['peliculas']">Contactos</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" [routerLink]="['video']">Login</a>
+      </li>
       
       </ul>
       <div class="form-inline my-2 my-lg-0">
        <!-- <input #buscarTexto class="form-control mr-sm-2" type="text" placeholder="Buscar Heroe" (keyup.enter)="buscarHeroe(buscarTexto.value)
 ">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="buscarHeroe(buscarTexto.value)">Buscar</button>-->
-      </div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="buscarHeroe(buscarTexto.value)">Buscar</button>
+     --> </div>
     
     </div>
   </nav>
+ <ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[0]" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[1]" alt="Random second slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[2]" alt="Random third slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<app-footer></app-footer>

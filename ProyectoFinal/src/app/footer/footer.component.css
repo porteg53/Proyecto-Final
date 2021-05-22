@@ -1,0 +1,17 @@
+.nav-link{
+    color: rgb(121, 118, 118);
+}
+.justify-content-center, .col-xl-2,.row,h3,h6{
+    color: brown;
+}
+h3{color: brown;}
+.logo{
+font-family: 'Bahnschrift Light';
+}
+h5{
+    font-family:' Snap ITC';
+    
+}
+footer{
+    background-color: rgb(5, 5, 5);
+}
