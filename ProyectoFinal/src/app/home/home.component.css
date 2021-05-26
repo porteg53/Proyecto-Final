@@ -1,0 +1,21 @@
+.jumbotron{
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: rgb(70, 73, 75);
+    background-color: rgb(241, 248, 240);
+}
+.lead{
+text-align: center;
+}
+h1{
+ font-size: 40px;
+ font-family: fantasy;
+ border-color: rgb(70, 73, 75);
+ color: #59d109;
+
+}
+.btn{
+margin: 30px;
+background-color: rgb(57, 189, 4);
+}

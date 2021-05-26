@@ -9,6 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PlatilloService } from './shared/platillo.service';
 import { FooterComponent } from './footer/footer.component';
+import { NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+import { OfertasComponent } from './ofertas/ofertas.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +22,13 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     HomeComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    OfertasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
  
   ],
   providers: [
@@ -30,4 +36,6 @@ import { FooterComponent } from './footer/footer.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
