@@ -9,8 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PlatilloService } from './shared/platillo.service';
 import { FooterComponent } from './footer/footer.component';
-import { NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
-import { OfertasComponent } from './ofertas/ofertas.component';
 
 
 
@@ -23,7 +21,7 @@ import { OfertasComponent } from './ofertas/ofertas.component';
     HomeComponent,
     ContactoComponent,
     FooterComponent,
-    OfertasComponent
+
   ],
   imports: [
     BrowserModule,
