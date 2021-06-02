@@ -1,7 +1,6 @@
 
 h1{
  font-size: 40px;
- 
  font-family: fantasy;
  border-color: rgb(70, 73, 75);
  color: #59d109;
@@ -36,4 +35,12 @@ h1{
     padding:15px;
     text-align:left;
   }
- 
+  .container-fluid{
+        
+        width: 100%;
+        margin: 0px;
+    }
+    ngb-carousel .wrapper img{
+      text-align: center;
+    }
+    
