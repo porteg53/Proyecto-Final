@@ -36,9 +36,8 @@ h1{
     text-align:left;
   }
   .container-fluid{
-        
-        width: 100%;
-        margin: 0px;
+    padding-top:50px;
+        width: 90%;
     }
     ngb-carousel .wrapper img{
       text-align: center;
