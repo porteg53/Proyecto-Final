@@ -9,16 +9,17 @@
   }
   .menuu{
       color: white;
-      background-color: rgb(5, 20, 87);
+      background-color: rgb(29, 28, 28);
+      font-size: 17px;
   }
-  .menuus{
-      font-size: 20px;
-    color: white;
-    background-color: rgb(5, 20, 87);
-}
 
-.ele{
+.ele {
     width: 100%;
-
+    color: white;
     text-align: center;
+    text-decoration: none;
+}
+.m{
+    background-color:  rgb(29, 28, 28);
+    color: white;
 }
