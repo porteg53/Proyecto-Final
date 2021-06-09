@@ -1,0 +1,54 @@
+<div style="height: 100vh;">
+    <mat-toolbar class="m">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Carloca`s</span>
+        <span class="menu-spacer"></span>
+      
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill >
+      <mat-sidenav #sidenav class="menuu">
+        <mat-nav-list class="ele">
+            <mat-label class="ele"><br>	<mat-icon style="height: 50px; width: 50px;">person</mat-icon><br><br> Usuarios</mat-label>
+          <hr>
+          <a href="#" mat-list-item  class="ele"><mat-icon  > home</mat-icon> Inicio</a> 
+          <a href="#" mat-list-item class="ele"><mat-icon>calendar_today</mat-icon> Calendario</a>
+          <mat-form-field >
+            <mat-label class="ele"font-size="25px"><mat-icon> restaurant</mat-icon>  Productos</mat-label>
+            <mat-select class="ele"  [(value)]="selected">
+              <mat-icon>filter_list</mat-icon><mat-option value="Listar Producto">	 Listar Producto</mat-option>
+              <mat-icon>add_box</mat-icon><mat-option value="Agregar producto"> Agregar producto</mat-option>
+              <mat-option value="Eliminar producto"><mat-icon>delete_sweep</mat-icon> Eliminar producto</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <a mat-list-item class="ele">
+          <mat-form-field >
+            <mat-label class="ele" font-size="25px"><mat-icon> bar_chart</mat-icon> Reporte</mat-label>
+            <mat-select class="ele"[(value)]="selected1">
+              <mat-option value="Diario">	Diario</mat-option>
+              <mat-option value="Mensual"> Mensual</mat-option>
+                </mat-select>
+          </mat-form-field>
+        </a>
+          <a mat-list-item class="ele">
+            <mat-form-field >
+                <mat-label class="ele"  font-size="25px">	<mat-icon>people</mat-icon> Usuarios</mat-label>
+                <mat-select class="ele" [(value)]="selected2">
+                    <mat-icon>filter_list</mat-icon><mat-option value="Listar Producto">Listar usuarios</mat-option>
+                    <mat-icon>person_add</mat-icon><mat-option value="Agregar producto">Agregar usuario</mat-option>
+                    <mat-icon>delete_sweep</mat-icon><mat-option value="Eliminar producto">Eliminar usuario</mat-option>
+                  
+                    </mat-select>
+              </mat-form-field>
+          </a>
+          <a [routerLink]="['/home']" class="ele" href="" mat-list-item><mat-icon> close</mat-icon>Close</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content class=" menu"fxFlexFill></mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  

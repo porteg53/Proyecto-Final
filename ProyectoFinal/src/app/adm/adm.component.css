@@ -1,0 +1,25 @@
+.menu-spacer {
+
+    flex: 1 1 auto;
+  }
+  
+  .menu{
+  
+      height: 900px;
+  }
+  .menuu{
+      color: white;
+      background-color: rgb(29, 28, 28);
+      font-size: 17px;
+  }
+
+.ele {
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.m{
+    background-color:  rgb(29, 28, 28);
+    color: white;
+}

@@ -1,32 +1,26 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-        <img src="../../assets/img/logo.png" width="150" height="50" alt="">
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"> Carloca`s   <img src="..." width="150" height="50" class="d-inline-block align-top" alt="" [routerLink]="['/home']">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+       aria-expanded="false" aria-label="Toggle navigation"
+       (click)="toggleCollapsed()">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" [routerLink]="['home']">Home</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['heroes']">Nosotros</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['peliculas']">Contactos</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" [routerLink]="['video']">Login</a>
-      </li>
+ 
+    <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" [routerLink]="['/home']" >Inicio<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/adm']" >Nosotros<span class="sr-only"></span></a>
+              </li>
       
-      </ul>
-    <div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCentered"  [routerLink]="['/login']">
+                Login 
+              </button>
+          </ul>
     </div>
-    
-    </div>
-  </nav>
-
-
+</nav>
